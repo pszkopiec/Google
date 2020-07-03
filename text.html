@@ -1,0 +1,81 @@
+<DOCTYPE! html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>My Google Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device=width, initial-scale=1">
+<style>
+body{
+    font-family: Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" id="about">About</a>
+        <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" id="store">Store</a>
+        <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm%26ogbl&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" id="gmail" class="right">Gmail</a>
+        <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl" class="right" id="images">Images</a>
+        <a href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="right" id="sign-in"><b>Sign in</b></a>
+        <div class="dropdown" class="right">
+            <button onclick="myFunction()" class="dropbtn">
+            <img src="googlesquare2.png" alt="The Google Square Thing" id="square" class="right">
+            </button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+        </div>
+        </div>
+    </div>
+    <main>
+        <div class="logo">
+            <img src="googlelogo1998v2.jpg" id="logo" alt="The Google Logo">
+        </div>
+        <div class="search">
+            <input type="text" id="search" placeholder="">
+            <img id="mg" src="googlemag3.png">
+        </div>
+        <div class="buttons">
+            <button type="button" id="button-left"><b>Google Search</b></button>
+            <button type="button" id="button-right"><b>I'm Feeling Lucky</b></button>
+        </div>
+    
+    </main>
+   
+    <div class="footer">
+        <div class="move-right">
+        <a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" class="left" id="A">Advertising</a>
+        <a href="https://smallbusiness.withgoogle.com/help/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/" class="left" id="B">Business</a>
+        <a href="https://www.google.com/search/howsearchworks/?fg=1" class="left" id="C">How Search works</a>
+    </div>
+        <a href="https://policies.google.com/privacy?fg=1" class="right" id="P">Privacy</a>
+        <a href="https://policies.google.com/terms?fg=1" class="right" id="T">Terms</a>
+        <a href="#" class="right" id="S">Settings</a>
+    </div>
+
+
+    <script>
+
+    /* When the user clicks on the button toggle between hiding and showing the dropdown content */
+    function myFunction () {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    /*Close the dropdown menu if the user clicks outsie of it */
+    window.oneclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementByClassName ("dropdown-content");
+            var i;
+            for ( i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if ( openDropdown.classList.contains ('show')) {
+                    openDropdown.classList.remove ('show');
+                }
+        
+            }
+        }
+    }
+    
+    </script>
+</body>
+</DOCTYPE>

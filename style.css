@@ -1,0 +1,359 @@
+ /*Gives body a blue background color for editing purposes. Will be ultimately changed to white.*/
+html body{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden; /*hide overflow*/
+    background-color: white; /*Darl background color */
+}
+
+/*style the navigation bar links */
+.navbar a {
+    float: left; /*make sure that the links stay by side */
+    color: rgb(65, 62, 62); /* White text color*/
+    text-align: center; /* Center the text*/
+    padding: 14px 20px; /*Add some padding*/
+    text-decoration: none; /*Remove underline*/
+    font-size: 14px;
+    font-family: arial, sans-serif;  
+}
+
+ /*Right-alinged link*/
+ .navbar a.right {
+     float: right; /*Float a link to the right*/
+ }
+ 
+ 
+
+ .navbar a:hover {
+     text-decoration: underline; /*Grey background color*/
+     color: black; /*Black text color */
+ }
+
+ .footer {
+     width: 100%;
+     background-color: rgb(202, 235, 240);
+     padding: 25px;
+     position: absolute;
+     bottom: 0;
+     border: 3px solid powderblue;
+     
+    
+   
+ }
+
+ .footer .left#A {
+     position: absolute;
+     left: 10;
+     bottom:15;
+     text-decoration: none; 
+     color: rgb(65, 62, 62);
+     font-size: 14px;
+     font-family: Arial, Helvetica, sans-serif;
+     
+ }
+
+ .footer .left#A:hover {
+     color: black;
+     text-decoration: underline;
+ }
+ 
+
+
+ .footer .left#B {
+    position: absolute;
+    left: 100;
+    bottom: 15;
+    text-decoration: none; 
+     color: rgb(65, 62, 62);
+     font-size: 14px;
+     
+}
+
+.footer .left#B:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+.footer .left#C {
+    position: absolute;
+    left: 180;
+    bottom: 15;
+    text-decoration: none; 
+     color: rgb(65, 62, 62);
+     font-size: 14px;
+}
+
+.footer .left#C:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+ .footer .right#P {
+     position: absolute;
+     right: 180;
+     bottom: 15;
+     text-decoration: none; 
+     color: rgb(65, 62, 62);
+     font-size: 14px;
+ }
+
+ .footer .right#P:hover {
+    color: black;
+    text-decoration: underline;
+}
+ 
+ .footer .right#T {
+    position: absolute;
+    right: 100;
+    bottom: 15;
+    text-decoration: none; 
+     color: rgb(65, 62, 62);
+     font-size: 14px;  
+ }
+
+ .footer .right#T:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+ .footer .right#S {
+    position: absolute;
+    right: 10;
+    bottom: 15;
+    text-decoration: none; 
+     color: rgb(65, 62, 62);
+     font-size: 14px;
+ }
+
+ .footer .right#S:hover {
+    color: black;
+    text-decoration: underline;
+}
+ /*main element holding Google logo/searchbar/buttons*/
+ /*Targets main element so that everything under it is centered and in correct positon relative to navbar and footer*/
+ main {
+     
+    position: relative;
+}
+
+/*Targets all div elements in main subdivison. Corrects margins between them and padding*/
+/*Corrects width of Google element by encompassing the image exactly then filling image 100% in the #logo ID below*/
+main div:nth-child(1) {
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    top: 235px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Corrects width by using the id of search bar to width 100% of this container size*/
+main div:nth-child(2) {
+    width: 500px;
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+}
+
+/*Matches width size of buttons so that they stay side by side. If width too small will force buttons on on top of the other*/
+main div:nth-child(3) {
+    width: 290px;
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translate(-50%,-50%)
+      
+}
+ 
+/*Gives Google logo a background for editing purposes, will ultimately be removed for a white background. In dev mode it will be green*/
+ .logo {
+    background-color: white; /*White background color */ 
+     
+ }
+
+ /*Will fit Google logo, using its ID, to the dimensions of its box. Box should fit exactly just to make things easier in this beginning stage. Will aid in editing.*/
+ #logo {
+     width: 100%;
+     
+ }
+
+
+
+/* Gives searbar box yellow color for editing purposes*/
+.search {
+    background-color: white;   
+    margin: auto;
+    
+}
+
+/*Configures font-size of searbar and also gives an indentation*/
+.search input[type=text] {
+    font-size: 14px;
+    text-indent: 35;
+    opacity: .90;  
+}
+
+/*Using border-radius to round searbar. Make position relative to slightly adjust the searchbar upwards for exact positioning*/
+#search {
+    
+    padding: 9px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    position: relative;
+    top: -20px;
+}
+
+/*pseudo-class :hover so that on cursor hover a box shadow makes a nice outline*/
+#search:hover {
+    box-shadow: 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+.buttons {
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+#button-left:hover {
+    background-color: rgb(170, 143, 143);
+    cursor: pointer; 
+}
+
+#button-left {
+    font-size: 13px;
+    box-shadow: 0px 4px 12px 0px;
+    border: 5px solid powderblue;
+    border-style: outset;
+    transition: background-color 0.5s;
+}
+
+#button-right {
+    font-size: 13px;
+    box-shadow: 0px 4px 12px 0px;
+    border: 5px solid powderblue;
+    border-style: outset;
+    transition: background-color 0.5s;
+    
+}
+
+#button-right:hover {
+    background-color:rgb(170, 143, 143);
+    cursor: pointer;
+}
+
+#sign-in {
+    padding: 8;
+    font-weight: bold; 
+    position: absolute;
+    right: 20;
+    background-color:  rgb(202, 235, 240);
+   border: 3px solid powderblue;
+    border-radius: 2px;
+    top: 12;
+    transition: background-color .25s;
+    
+}
+
+#sign-in:hover {
+    background-color: rgb(170, 143, 143);
+    color: black;
+}
+
+#square {
+    width: 40px;
+    position: absolute;
+    right: 95;
+    display: block;
+    padding: 5;
+    opacity: 0.6;
+    top: 8;
+}
+
+#gmail {
+    position: absolute;
+    right: 193;
+    top: 5px;
+}
+
+#images {
+    position: absolute;
+    right: 127;
+    top: 5px;
+}
+
+#about {
+    position: absolute;
+    top: 5px;
+    left: 70px;
+}
+
+#store {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+#mg {
+    
+    position: absolute;
+    left: 15px;
+    top: -8px;
+    transform: translate(-50%, -50%);
+    width: 20px;   
+    transform: rotateY(180deg)
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}   
+
+/* The container needed to position dropdown content*/
+.dropdown {
+    
+    display: block;
+}
+
+/*Dropdown Content (hidden by Default) */
+.dropdown-content {
+    display: none;
+    min-width: 160px;    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color:rgb(247, 243, 243);
+    right: 80;
+    top: 49;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+/* Show the dropdown menu (use JS to add this to the .dropdown-content container when the user clicks on the dropdown button */
+.show {
+    display: block;
+}
+
