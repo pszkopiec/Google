@@ -229,7 +229,7 @@ main div:nth-child(3) {
 }
 
 #button-left:hover {
-    background-color: rgb(170, 143, 143);
+    background-color: rgb(241, 229, 229);
     cursor: pointer; 
 }
 
@@ -254,7 +254,7 @@ main div:nth-child(3) {
 }
 
 #button-right:hover {
-    background-color:rgb(170, 143, 143);
+    background-color:rgb(241, 229, 229);
     cursor: pointer;
 }
 
@@ -272,7 +272,7 @@ main div:nth-child(3) {
 }
 
 #sign-in:hover {
-    background-color: rgb(170, 143, 143);
+    background-color: rgb(228, 210, 210);
     color: black;
 }
 
